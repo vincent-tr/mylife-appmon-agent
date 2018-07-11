@@ -1,0 +1,29 @@
+{
+  "name": "mylife-appmon-agent",
+  "version": "1.0.0",
+  "description": "MyLife Application Monitoring Agent",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint bin/*",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "DEBUG=mylife:appmon:* node bin/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vincent-tr/mylife-appmon-agent.git"
+  },
+  "author": "Vincent Trumpff",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/vincent-tr/mylife-appmon-agent/issues"
+  },
+  "homepage": "https://github.com/vincent-tr/mylife-appmon-agent#readme",
+  "dependencies": {
+    "debug": "^3.1.0",
+    "mylife-appmon": "github:vincent-tr/mylife-appmon",
+    "mylife-appmon-plugin-mongo": "github:vincent-tr/mylife-appmon-plugin-mongo"
+  },
+  "devDependencies": {
+    "eslint": "^5.1.0"
+  }
+}
